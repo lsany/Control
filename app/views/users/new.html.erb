@@ -1,0 +1,58 @@
+<% provide(:title, 'Sign up') %>
+<h1 align = 'center'>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+        <%= f.label :name, 'Name' %>
+        <%= f.text_field :name %>
+
+        <%= f.label :gender, 'Gender'%>
+        <%= f.text_field :gender %>
+
+        <%= f.label :age, 'Age'%>
+        <%= f.text_field :age %>
+
+        <%= f.label :status, 'Status(1:Student,2:Lecturer,3:Professor)'%>
+        <%= f.text_field :status %>
+
+        <%= f.label :pref_temperature, 'Please input your preference of temperature.(1:very cool, 2:cool, 3:medium, 4:warm, 5: very warm)'%>
+        <%= f.text_field :pref_temperature %>
+
+        <%= f.label :credit_temperature, 'Please input you concern level on Temperature.(1:lowest, ..., 5:highest)'%>
+        <%= f.text_field :credit_temperature %>
+
+        <%= f.label :pref_humidity, 'Please input your preference of humidity.(1:very low, 2:low, 3:medium, 4:high, 5: very high)'%>
+        <%= f.text_field :pref_humidity %>
+
+        <%= f.label :credit_humidity,'Please input you concern level on humidity.(1:lowest, ..., 5:highest)'%>
+        <%= f.text_field :credit_humidity %>
+
+        <%= f.label :pref_light0 , 'Please input your preference of light0.(0:off; 1:on)'%>
+        <%= f.text_field :pref_light0 %>
+
+        <%= f.label :credit_light0,'Do you need to use this light?(0:No; 1:Yes; 2:Yes and I own this light.)'%>
+        <%= f.text_field :credit_light0 %>
+
+        <%= f.label :pref_light1 , 'Please input your preference of light1.(0:off; 1:on)'%>
+        <%= f.text_field :pref_light1 %>
+
+        <%= f.label :credit_light1,'Do you need to use this light?(0:No; 1:Yes; 2:Yes and I own this light.)'%>
+        <%= f.text_field :credit_light1 %>
+
+        <%= f.label :pref_light2 , 'Please input your preference of light2.(0:off; 1:on)'%>
+        <%= f.text_field :pref_light2 %>
+
+        <%= f.label :credit_light2,'Do you need to use this light?(0:No; 1:Yes; 2:Yes and I own this light.)'%>
+        <%= f.text_field :credit_light2 %>
+
+        <%= f.label :pref_light3 , 'Please input your preference of light3.(0:off; 1:on)'%>
+        <%= f.text_field :pref_light3 %>
+
+        <%= f.label :credit_light3,'Do you need to use this light?(0:No; 1:Yes; 2:Yes and I own this light.)'%>
+        <%= f.text_field :credit_light3 %>
+
+        <%= f.submit 'Create my account', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
