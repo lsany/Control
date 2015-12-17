@@ -56,27 +56,40 @@
       <column id="17" parent="3" name="pref_light0">
         <data-type>tinyint(1)</data-type>
       </column>
-      <column id="18" parent="3" name="pref_light1">
+      <column id="18" parent="3" name="credit_light0">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="19" parent="3" name="pref_light1">
         <data-type>tinyint(1)</data-type>
       </column>
-      <column id="19" parent="3" name="pref_light2">
+      <column id="20" parent="3" name="credit_light1">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="21" parent="3" name="pref_light2">
         <data-type>tinyint(1)</data-type>
       </column>
-      <column id="20" parent="3" name="pref_light3">
+      <column id="22" parent="3" name="credit_light2">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="23" parent="3" name="pref_light3">
         <data-type>tinyint(1)</data-type>
       </column>
-      <column id="21" parent="3" name="moment">
+      <column id="24" parent="3" name="credit_light3">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="25" parent="3" name="moment">
         <data-type>datetime</data-type>
       </column>
-      <column id="22" parent="3" name="created_at">
+      <column id="26" parent="3" name="created_at">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="23" parent="3" name="updated_at">
+      <column id="27" parent="3" name="updated_at">
         <mandatory>1</mandatory>
-        <data-type>datetime</data-type>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <key id="24" parent="3" name="PRIMARY">
+      <key id="28" parent="3" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

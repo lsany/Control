@@ -1,5 +1,8 @@
 class GenerateCommonPrefController < ApplicationController
+  require 'sidekiq/api'
+  Sidekiq::Queue.new.clear
+  Sidekiq::RetrySet.new.clear
+  Sidekiq::ScheduledSet.new.clear
 
   FaceRecognitionJob.perform_later
-  ApplyPrefJob.set(wait:35.seconds).perform_later
 end
